@@ -17,3 +17,11 @@ Extract the binary then move to `/usr/bin/` <br />
 
 ## Install `xlrd` for `pandas`
 `pip install xlrd`
+
+## Target the Intagram post
+Before run the script, ensure the targeted Instagram post in the `scraper.py` <br />
+`driver.get('https://www.instagram.com/p/BqUfulwH6O4/')` <br />
+Change the URL with your post target <br />
+
+## Run
+`python scraper.py`
