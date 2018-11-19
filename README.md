@@ -25,3 +25,6 @@ Change the URL with your post target <br />
 
 ## Run
 `python scraper.py`
+
+# Lisence
+This project is under the [MIT Lisence](https://github.com/AgiMaulana/instagram-comments-scraper/blob/master/LICENSE.md)
