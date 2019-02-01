@@ -1,20 +1,28 @@
 from selenium import webdriver
 import time
+import sys
 
 driver = webdriver.Chrome()
-driver.get('https://www.instagram.com/p/BqUfulwH6O4/')
+driver.get(sys.argv[1])
 time.sleep(3)
 
-load_more_comment = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[2]/button')
-i = 0
+#if user not logined
 try:
-    while load_more_comment.is_displayed() and i < 25:
+    close_button = driver.find_element_by_class_name('xqRnw')
+    close_button.click()
+except:
+    pass
+
+
+try:
+    load_more_comment = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[2]/button')
+    i = 0
+    while load_more_comment.is_displayed() and i < 3000:
         load_more_comment.click()
         i += 1
         time.sleep(3)
 except:
     pass
-
 
 user_names = []
 user_comments = []
