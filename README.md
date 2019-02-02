@@ -1,4 +1,4 @@
-# instagram-comments-scraper
+# Instagram Comments Scraper
 
 ## Install dependencies
 `pip install -r requirements.txt`
