@@ -17,7 +17,7 @@ except:
 try:
     load_more_comment = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[2]/button')
     i = 0
-    while load_more_comment.is_displayed() and i < 3000:
+    while load_more_comment.is_displayed() and i < sys.argv[2]:
         load_more_comment.click()
         i += 1
         time.sleep(3)
