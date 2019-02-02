@@ -1,3 +1,4 @@
 *.pyc
 *.xlsx
 __pycache__/
+~lock.*
