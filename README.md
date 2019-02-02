@@ -1,6 +1,6 @@
 # instagram-comments-scraper
 
-## Install selenium
+## Install dependencies
 `pip install -r requirements.txt`
 
 ## Install Chrome Web Driver
