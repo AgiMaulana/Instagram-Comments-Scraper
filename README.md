@@ -19,5 +19,5 @@ Change the URL with your post target <br />
 Example : <br />
 `python scraper.py https://www.instagram.com/p/BqUfulwH6O4/ 5`
 
-# Lisence
-This project is under the [MIT Lisence](https://github.com/AgiMaulana/instagram-comments-scraper/blob/master/LICENSE.md)
+# License
+This project is under the [MIT License](https://github.com/AgiMaulana/instagram-comments-scraper/blob/master/LICENSE.md)
