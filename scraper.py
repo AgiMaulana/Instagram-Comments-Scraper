@@ -15,13 +15,17 @@ except:
 
 
 try:
-    load_more_comment = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[2]/button')
+    load_more_comment = driver.find_element_by_css_selector('.MGdpg > button:nth-child(1)')
+    print("Found {}".format(str(load_more_comment)))
     i = 0
-    while load_more_comment.is_displayed() and i < sys.argv[2]:
+    while load_more_comment.is_displayed() and i < int(sys.argv[2]):
         load_more_comment.click()
+        time.sleep(1.5)
+        load_more_comment = driver.find_element_by_css_selector('.MGdpg > button:nth-child(1)')
+        print("Found {}".format(str(load_more_comment)))
         i += 1
-        time.sleep(3)
-except:
+except Exception as e:
+    print(e)
     pass
 
 user_names = []
