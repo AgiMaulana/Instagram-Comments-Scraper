@@ -9,11 +9,14 @@
 2. Create Virtual Environment (Recommended)<br/> 
     - `pip install virtualenv`
     - `virtualenv .venv`  
+    
+3. Activate the virtual environment
+    - `source .venv/bin/activate`
 
-3. Install dependencies
+4. Install dependencies
     - `pip install -r requirements.txt`
 
-4. Install Chrome Web Driver
+5. Install Chrome Web Driver
 
     `wget https://chromedriver.storage.googleapis.com/x.xx/chromedriver_linux64.zip` <br>
     See the latest Chrome web driver on https://sites.google.com/a/chromium.org/chromedriver/downloads <br /> <br />
@@ -22,13 +25,16 @@
     
     Make it executable `chmod +x .venv/bin/chromedriver`
 
+6. Run 
 
-## Run
-`python scraper.py post-url total-load-more-click`
-
-Change the URL with your post target <br />
-Example : <br />
-`python scraper.py https://www.instagram.com/p/BqUfulwH6O4/ 5`
+    `python scraper.py post-url total-load-more-click`
+    
+    Change the URL with your post target <br />
+    Example : <br />
+    `python scraper.py https://www.instagram.com/p/BqUfulwH6O4/ 5`
+ 
+7. Deactivate the virtual environment
+    - `deactivate`
 
 ## License
 This project is under the [MIT License](https://github.com/AgiMaulana/instagram-comments-scraper/blob/master/LICENSE.md)
