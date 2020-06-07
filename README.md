@@ -3,8 +3,11 @@
 
 ## Installation
 1. Clone:
-    `git clone git@github.com:AgiMaulana/Instagram-Comments-Scraper.git`<br/>
-    or `git clone https://github.com/AgiMaulana/Instagram-Comments-Scraper.git` <br/>
+
+   `git clone git@github.com:AgiMaulana/Instagram-Comments-Scraper.git`
+   
+    or `git clone https://github.com/AgiMaulana/Instagram-Comments-Scraper.git`
+    
     or download the [zip](https://github.com/AgiMaulana/Instagram-Comments-Scraper/archive/master.zip)
 2. Create Virtual Environment (Recommended)<br/> 
     - `pip install virtualenv`
