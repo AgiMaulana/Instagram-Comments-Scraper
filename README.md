@@ -29,7 +29,7 @@
     - `python scraper.py post-url total-load-more-click`
    
     Change the URL with your post target. <br/>
-    For example : `python scraper.py https://www.instagram.com/p/BqUfulwH6O4/ 5` 
+    For example : `python scraper.py https://www.instagram.com/p/CBHH2KjI6BW/ 5` 
  
 7. Deactivate the virtual environment
     - `deactivate`
