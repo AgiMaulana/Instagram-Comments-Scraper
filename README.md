@@ -20,21 +20,16 @@
     - `pip install -r requirements.txt`
 
 5. Install Chrome Web Driver
-
-    `wget https://chromedriver.storage.googleapis.com/x.xx/chromedriver_linux64.zip` <br>
+    - `wget https://chromedriver.storage.googleapis.com/x.xx/chromedriver_linux64.zip` <br>
     See the latest Chrome web driver on https://sites.google.com/a/chromium.org/chromedriver/downloads <br /> <br />
-    
-    Extract and move the binary to bin: `unzip chromedriver_linux64.zip -d .venv/bin/`
-    
-    Make it executable `chmod +x .venv/bin/chromedriver`
+    - Extract and move the binary to bin: `unzip chromedriver_linux64.zip -d .venv/bin/`
+    - Make it executable `chmod +x .venv/bin/chromedriver`
 
 6. Run 
-
-    `python scraper.py post-url total-load-more-click`
-    
-    Change the URL with your post target <br />
-    Example : <br />
-    `python scraper.py https://www.instagram.com/p/BqUfulwH6O4/ 5`
+    - `python scraper.py post-url total-load-more-click`
+   
+    Change the URL with your post target. <br/>
+    For example : `python scraper.py https://www.instagram.com/p/BqUfulwH6O4/ 5` 
  
 7. Deactivate the virtual environment
     - `deactivate`
