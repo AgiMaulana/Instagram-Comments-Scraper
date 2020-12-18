@@ -16,5 +16,5 @@ def export(names, comments):
     temp.update({'name': temp_names, 'comment': temp_comments})
     df = pd.DataFrame(temp)
     writer = ExcelWriter(fname)
-    df.to_excel(writer, 'ridwan kamil', index=False)
+    df.to_excel(writer, 'comments', index=False)
     writer.save()
