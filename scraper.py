@@ -18,10 +18,10 @@ to use something different to use that link through Python Selenium. Either we c
 or name selectors to use that.
 """
 username=driver.find_element(By.NAME,"username")
-username.send_keys ('6361118782')
+username.send_keys ('USER-NAME')
 
 password =driver.find_element (By.NAME,"password")
-password.send_keys('insta!!@@##12')
+password.send_keys('PASSWORD')
 password.submit()
 
 
@@ -37,16 +37,15 @@ time.sleep(4)
 
 # load "sys.argv[2]" comments 
 try:
-    load_more_comment = driver.find_element(By.XPATH,'/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div[2]/section/main/div/div[1]/div/div[2]/div/div[2]/div/div[2]')
+    load_more_comment = driver.find_element(By.XPATH,'/html/body/div[2]/div/div/div[2]/div/div/div/div[1]/div[1]/div[2]/section/main/div/div[1]/div/div[2]/div/div[2]/div/div/ul/li/div/button')
     print("Found {}".format(str(load_more_comment)))
     i = 0
     while load_more_comment.is_displayed() and i < int(sys.argv[2]):
         load_more_comment.click()
         time.sleep(7)
-        load_more_comment = driver.find_element(By.XPATH,'/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div[2]/section/main/div/div[1]/div/div[2]/div/div[2]/div/div[2]')
+        load_more_comment = driver.find_element(By.XPATH,'/html/body/div[2]/div/div/div[2]/div/div/div/div[1]/div[1]/div[2]/section/main/div/div[1]/div/div[2]/div/div[2]/div/div/ul/li/div/button')
         print(i)
-        print("Found {}\n".format(load_more_comment.text))
-
+        print("Found {}".format(str(load_more_comment)))
         i += 1
 except Exception as e:
     print(e)
@@ -73,9 +72,3 @@ import excel_exporter
 excel_exporter.export(user_names, user_comments)
 
 driver.close()
-
-# _ap3a profile name
-
-
-
-

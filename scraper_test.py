@@ -20,10 +20,10 @@ to use something different to use that link through Python Selenium. Either we c
 or name selectors to use that.
 """
 username=driver.find_element(By.NAME,"username")
-username.send_keys ('6361118782')
+username.send_keys ('USER_NAME')   #enter your username
 
 password =driver.find_element (By.NAME,"password")
-password.send_keys('insta!!@@##12')
+password.send_keys('USER_PASSWORD') #enter your password
 password.submit()
 
 
@@ -105,7 +105,7 @@ try:
         time.sleep(1)
     set_user_and_comment()
 
-    
+
 
 
     print(f'user name:{user_names} len:{len(user_names)}\n\nuser comments:{user_comments} len:{len(user_comments)}')
@@ -113,35 +113,8 @@ try:
 
 
 
-    # driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight;", element)
-    # time.sleep (2)
-    # names = comments_container.find_elements(By.CLASS_NAME, '_ap3a')
-    # print(f'no of elements after first scrolling:{len(names)}')
-    # driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight;", element)
-    # time.sleep (2)
-    # names = comments_container.find_elements(By.CLASS_NAME, '_ap3a')
-    # print(f'no of elements after second scrolling:{len(names)}')
-
-    # driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight;", element)
-    # time.sleep (2)
-    # names = comments_container.find_elements(By.CLASS_NAME, '_ap3a')
-    # print(f'no of elements after third scrolling:{len(names)}')
-
-
-    # names = element.find_elements(By.CLASS_NAME, '_ap3a')
-
-    # for name in names:
-    #     print(name.text)
-
-    
-
 except Exception as e:
     print(e)
     pass
 
-# driver.close()
-
-    # element = driver.find_element(By.XPATH,'//div[@data-visualcompletion]')
-
-    # print(element.text)
-    # driver.execute_script("arguments[0].scrollIntoView();", element)
+driver.close()
