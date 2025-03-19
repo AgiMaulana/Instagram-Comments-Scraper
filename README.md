@@ -1,5 +1,11 @@
-# Instagram Comments Scraper
+> I don't actively maintain this repository.
+>
+> 
+> Why this scraper doesn't work on my side?
+> 
+> As I observed on the current Instagram website the website could respond with different elements or pages so this scraper might not work for some people. 
 
+# Instagram Comments Scraper
 
 ## Installation
 1. Clone:
