@@ -3,7 +3,9 @@ import time
 import sys
 from selenium.webdriver.common.by import By
 
-driver = webdriver.Firefox()
+service = webdriver.FirefoxService(executable_path="/home/asdf/geckodriver")
+
+driver = webdriver.Firefox(service=service)
 
 url="https://www.instagram.com/"
 
