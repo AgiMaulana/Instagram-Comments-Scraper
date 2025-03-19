@@ -3,7 +3,7 @@ import time
 import sys
 from selenium.webdriver.common.by import By
 
-service = webdriver.FirefoxService(executable_path="/home/asdf/geckodriver")
+service = webdriver.FirefoxService(executable_path="path_to_geckodriver")
 
 driver = webdriver.Firefox(service=service)
 
