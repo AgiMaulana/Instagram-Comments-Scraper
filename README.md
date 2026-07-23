@@ -1,3 +1,25 @@
+<div align="center">
+  <a href="https://www.coreclaw.com/?utm_source=github&utm_medium=referral&utm_campaign=agi&utm_term=&utm_id=agi">
+    <img src="docs/images/coreclaw-banner.png" alt="CoreClaw Banner" width="100%" />
+  </a>
+</div>
+
+<br/>
+
+# 🚀 CoreClaw – Instagram Data API & Ready-to-use Scrapers
+
+CoreClaw provides ready-to-use data extraction Workers and APIs for collecting structured data from Instagram and other popular platforms. Extract Instagram posts, comments, profiles, and more without building and maintaining your own scraper infrastructure.
+
+<div align="center">
+  <a href="https://www.coreclaw.com/?utm_source=github&utm_medium=referral&utm_campaign=agi&utm_term=&utm_id=agi">
+    <strong>🚀 Try CoreClaw Free →</strong>
+  </a>
+</div>
+
+<br/>
+
+---
+
 > I don't actively maintain this repository.
 >
 > 
